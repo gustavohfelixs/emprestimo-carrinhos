@@ -4,7 +4,8 @@
   "description": "Implementação de um sistema de empréstimo de carrinhos de notebooks para estudar programação",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:watch": "jest --watchAll",
+    "test": "jest",
     "dev": "next dev",
     "lint:check": "prettier --check .",
     "lint:write": "prettier --write ."
@@ -13,10 +14,12 @@
   "license": "MIT",
   "dependencies": {
     "next": "^13.5.6",
+    "pg": "^8.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "jest": "^29.6.2",
     "prettier": "^3.2.5"
   }
 }
