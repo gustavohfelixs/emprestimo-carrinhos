@@ -6,9 +6,10 @@
   "scripts": {
     "test:watch": "jest --watchAll",
     "test": "jest",
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
     "lint:check": "prettier --check .",
-    "lint:write": "prettier --write ."
+    "lint:write": "prettier --write .",
+    "services:up": "docker compose -f infra/compose.yaml up -d"
   },
   "author": "",
   "license": "MIT",
